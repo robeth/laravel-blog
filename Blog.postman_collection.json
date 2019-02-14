@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "eee761b6-1513-4855-89ee-7b18fd4480a3",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Blog Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "jMP4OICkWtW13OWIZpIT9wuHs0CfGOEqQTGwLOIl",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "fey@hallo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/blog/public/oauth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blog",
+						"public",
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Blog Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "fey23",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "fey23@hallo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "654321",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "12312313",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/blog/public/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blog",
+						"public",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
